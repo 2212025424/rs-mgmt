@@ -1,0 +1,643 @@
+
+/*============================================================================================================*/
+/*-------------------------------------------- Botones des sitio web basados en BEM --*/
+/*============================================================================================================*/
+.btn{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 6px 12px;
+    font-size:14px;
+    border-radius:4px;
+    border: none;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn_sm{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 3px 6px;
+    font-size:11px;
+    border-radius: 40px;
+    border: none;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+    min-width: 60px;
+    text-transform: uppercase;
+}
+
+.btn_sm{
+    outline: none;
+}
+
+.btn_icono_sm{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size:11px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+    text-transform: uppercase;
+}
+
+.btn_icono_sm{
+    outline: none;
+}
+
+.btn_primary{
+    background-color: #0670c9;
+    color: white;
+}
+
+.btn_primary:hover{
+    background-color: #005faf;
+}
+
+.btn_peligro{
+    background-color: #f54255;
+    color: white;
+}
+
+.btn_peligro:hover{
+    background-color: #e83548;
+}
+
+.btn_alerta{
+    background-color: #face55;
+    color: white;
+}
+
+.btn_alerta:hover{
+    background-color: #FCC42B;
+}
+
+.btn_exito{
+    background-color: #5cb85c;
+    color: white;
+}
+
+.btn_exito:hover{
+    background-color: #50a150;
+}
+
+
+
+
+
+/*============================================================================================================*/
+/*-------------------------------------------- Ventanas modales del sitio web --*/
+/*============================================================================================================*/
+
+.ventana_modal {
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    /*Inicializar la modal en display: none;*/
+    display: none;
+    position: fixed;
+    z-index: 999;
+    overflow-y: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: rgba(33, 41, 52, .85);
+}
+
+.ventana_modal__content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 600px;
+    min-width: 400px !important;
+    position: relative;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
+}
+
+.ventana_modal__titulo{
+    border: none;
+    min-height: 30px;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-weight: 500;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.125);
+    background-color: #0670c9;
+    color: white;
+}
+
+.ventana_modal__pie{
+    border: none;
+    min-height: 30px;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #f5f5f5;
+    color: black;
+}
+
+.ventana_modal_cuerpo{
+    padding: 2rem 2rem;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.ventana_modal .presentacion_dos_columnas{
+    min-width: 350px;
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));;
+    grid-row-gap: 10px;
+    grid-column-gap: 30px;
+}
+
+
+
+
+
+/*============================================================================================================*/
+/*-------------------------- Estilo a los formularios del sitio y inputs --*/
+/*============================================================================================================*/
+
+.form-inline{
+    display: inline-block;
+}
+.form_select{
+    width: 100%;
+    padding: 5px 8px;
+    background: #f5f5f5;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #525050 !important;
+    font-size: 14px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    text-transform: uppercase;
+}
+
+.form_select:focus{
+    outline: none;
+    border: 1px solid #005faf;
+}
+
+.form_cuadro_texto{
+    width: 100%;
+    padding: 5px 8px;
+    background: #f5f5f5;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #525050 !important;
+    font-size: 15px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.form_cuadro_texto:focus{
+    outline: none;
+    border: 1px solid #005faf;
+}
+
+.form_textarea{
+    font-size: 15px;
+    height: 100px;
+    padding: 5px 8px;
+    max-height: 150px;
+    min-height: 100px;
+    max-width: 100%;
+    min-width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow-y: auto;
+    background: #f5f5f5;
+    color: #525050 !important;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+}
+
+.form_textarea:focus{
+    outline: none;
+    border: 1px solid #005faf;
+}
+
+.form_checkbox:before{
+    content: "";
+    display: block;
+    margin-top: 10px;
+}
+
+.form_checkbox{
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.form_checkbox + label {
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    position: relative;
+    bottom: 5px;
+    color: #ccc;
+}
+
+.form_checkbox + label:after{
+    content: "";
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"]:checked + label {
+    color: #0fbf12;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+.seccion_funcion_busqueda_input:focus{
+    outline: none;
+}
+
+.seccion_funcion_busqueda_input.val_cuadro_error{
+    background-color: #FFEBEE;
+}
+
+.mensaje_error{
+    color: red;
+    font-size: 14px;
+    text-transform: lowercase;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+.seccion_funcion_busqueda{
+    min-width: 250px;
+}
+
+.seccion_funcion_busqueda_input{
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 1rem;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    color: #525050 !important;
+    background: #f8f8f8;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+.cont_form_sec{
+    font-size: 14px;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 30px;
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));;
+    grid-gap: 20px;
+    color: slategray;
+}
+.cont_main_form p:first-child{
+    color: slategray;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+.form_in_line {
+    position: relative;
+    left: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    grid-gap: 10px;
+    max-width: 500px;
+    margin: auto;
+    font-size: 14px;
+    color: slategray;
+}
+.form_in_line__insumo{
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.elemento_input_ins{
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+}
+
+
+
+
+
+
+
+
+/*============================================================================================================*/
+/*-------------------------------------------- Estilo a las tablas --*/
+/*============================================================================================================*/
+
+.contenedor_encabezado_tabla{
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table_responsive{
+    width: 96%;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    overflow-x: auto;
+    cursor: default;
+}
+
+.tabla_contenido {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.tabla_contenido tbody tr{
+    border-bottom: solid 1px #f9f9f9;
+}
+
+.tabla_contenido tbody tr:nth-child(2n){
+    background-color: #f9f9f9;
+}
+
+.tabla_contenido tbody tr:last-child{
+    border-bottom: solid 2px #5da9cf;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.tabla_contenido th {
+    padding: .6rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #5da9cf;
+    color: white;
+}
+
+.tabla_contenido th:last-child{
+    border-right: solid 1px #5da9cf;
+}
+
+.tabla_contenido td {
+    padding: .5rem;
+    border-left: solid 1px #f5f5f5;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tabla_contenido td:hover{
+    background-color: #EDEFF9;
+}
+
+.tabla_contenido td:last-child{
+    border-right: solid 1px #f5f5f5;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+.sub_tabla_contenido {
+    margin: auto;
+    min-width: 450px;
+    border: none;
+    border-collapse: collapse;
+    border: solid #e3e3e3 1px;
+    background-color: #fff;
+    cursor: default;
+    text-transform: uppercase;
+}
+.sub_tabla_contenido tr {
+    border-bottom: solid #e3e3e3 1px;
+}
+.sub_tabla_contenido thead tr {
+    border-bottom: solid #e3e3e3 2px;
+}
+.sub_tabla_contenido tbody tr:hover{
+    background-color: #fafafa;
+}
+.sub_tabla_contenido tbody tr:last-child{
+    border-bottom: solid #e3e3e3 2px;
+}
+.sub_tabla_contenido td, .sub_tabla_contenido th {
+    padding: 5px;
+    font-size: 13px;
+    text-align: center;
+}
+.sub_tabla_contenido th {
+    padding: 10px;
+    background-color: #fafafa;
+    font-weight: 500;
+}
+
+
+
+
+/*============================================================================================================*/
+/*-------------------------------------------- Contenedor de tarjetas de minimos datos --*/
+/*============================================================================================================*/
+
+.tarjeta_contenido {
+    max-width: 1500px;
+    width: 96%;
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));;
+    grid-gap: 30px;
+}
+
+.tarjeta_contenido__tarjeta {
+    position: relative;
+    border-radius: 5px;
+    cursor: default;
+    border: solid 1px #e3e3e3;
+    background-color: #fff;
+}
+
+.tarjeta_contenido__tarjeta:hover{
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.125);
+}
+
+.tarjeta_contenido__encabezado {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #5da9cf;
+    border-radius: 5px 5px 0 0;
+}
+
+.tarjeta_contenido__cuerpo {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.tarjeta_contenido__pie {
+    width: 100%;
+    padding: .5rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+
+
+/*============================================================================================================*/
+/*-------------------------------------------- Contenedor de imagen, no hay resultados --*/
+/*============================================================================================================*/
+
+.contenedor_img{
+    width: 100%;
+    text-align: center;
+}
+
+.contenedor_img__imagen_gr{
+    width: 70%;
+}
+
+.contenedor_img__imagen_md{
+    width: 30%;
+}
+
+.contenedor_img__imagen_ch{
+    width: 15%;
+}
+
+
+
+
+
+
+
+/*============================================================================================================*/
+/*-------------------------------------------- Elementos de presentacion - inicio - administrador --*/
+/*============================================================================================================*/
+
+.contenedor_mensaje_operacion{
+    border-radius: 4px;
+    min-width: 200px;
+    padding: 8px 15px;
+    text-align: center;
+    visibility: hidden;
+}
+
+.alerta_error{
+    background-color: #F8D7DA;
+    color: #721C24;
+}
+
+.alerta_exito{
+    background-color: #D4EDDA;
+    color: #155724;
+}
+
+
+
+
+
+
+
+
+
+.tarjetas_presentacion{
+    font-size: 14px;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 30px;
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));;
+    grid-gap: 30px;
+}
+
+.tarjeta_presentacion{
+    border-radius: 4px;
+    border: solid 1px #e3e3e3;
+    cursor: default;
+}
+
+.tarjeta_presentacion:hover {
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.125);
+}
+
+
+.tarjeta_presentacion__encabezado{
+    border-radius: 4px 4px 0 0;
+    padding: .5rem;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+    background-color: #5da9cf;
+    color: #fff;
+}
+.tarjeta_presentacion__cuerpo{
+    padding: .5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.tarjeta_presentacion__cuerpo > p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tarjeta_presentacion_img{
+    display: block;
+    width: 50%;
+    margin: auto;
+}

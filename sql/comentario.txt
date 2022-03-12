@@ -1,0 +1,69 @@
+
+-- Empresa clienta:     El Cangrejo Dorado
+-- Dueño empresa: 	Adrian Zempoaltecatl Xochitecatl
+-- Desarrollador: 	Jose Enrique Zempoaltecatl Moyotl
+-- Fecha termino: 	17 de Octubre de 2020
+
+
+-- Notas ---------------------------------------------------------
+ 0) VARCHAR no es sencible a mayusculas y minusculas
+
+
+
+-- Usuario -------------------------------------------------------
+estado:
+ 0) No disponibe
+ 1) Disponibe
+ 2) Bloqueado
+
+-- Caja ----------------------------------------------------------
+estado:
+ 0) No disponible
+ 1) Disponibe
+ 2) Bloqueada
+
+-- CajaApertura --------------------------------------------------
+estado:
+ 0) Suspendida Temporalmente
+ 1) Disponibe
+ 2) Labor Finalizada
+
+-- Mesa ----------------------------------------------------------
+estado:
+ 0) No disponibe
+ 1) Disponibe
+ 2) Bloqueada
+
+-- Venta ---------------------------------------------------------
+estado:
+ 0) Finalizada
+ 1) En proceso
+
+-- Producto ------------------------------------------------------
+estado: 
+ 0) No disponible
+ 1) Disponible
+
+-- Proveedor -----------------------------------------------------
+estado: 
+ 0) No disponible
+ 1) Disponible
+
+-- Insumo --------------------------------------------------------
+estado: 
+ 0) No disponible
+ 1) Disponible
+
+
+
+
+
+-- AreaProduccion -------------------------------------------------
+Default registro:
+ 1) Venta directa --> Productos sin proceso de produccion
+
+
+
+
+
+
